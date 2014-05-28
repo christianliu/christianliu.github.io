@@ -1,6 +1,7 @@
 /*general*/
 ul {
 	padding: 0;
+	list-style: none;
 }
 
 ul li {
@@ -13,11 +14,21 @@ body {
 }
 
 a:link {
+	color: black;
 	text-decoration: none;
 }
 
 a:visited {
 	color: black;
+}
+
+img {
+	clip: rect(0px,50%,50px,50%)
+}
+
+ul a:link {
+	width: 0;
+	height: 0;
 }
 
 /*header*/
@@ -40,7 +51,7 @@ header li {
 }
 
 h1 {
-		font-family: 'Open Sans', Arial, sans-serif;
+	font-family: 'Open Sans', Arial, sans-serif;
 }
 
 .clearfix {
@@ -81,7 +92,10 @@ footer * {
 	padding: 0;
 	color: #6CF;
 	font-family: 'Open Sans', Arial, sans-serif;
-	text-indent: 10px;
+}
+
+.portfolio a {
+	width = 100%
 }
 
 .portfolio a:visited {
@@ -109,10 +123,11 @@ footer * {
 .portfolio img {
 	box-sizing: border-box;
 	border: none;
-	width: 100%;
 	height: 200px;
-	margin: none;
 }
+
+.container {overflow: hidden; }
+.container img {width: 100%; height: 400px;}
 
 /*.portfolio  * // Any immediate children
 .portfolio *  // any children, incliding grandchildren
